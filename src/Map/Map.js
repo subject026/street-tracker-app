@@ -3,13 +3,13 @@ import "./Map.css";
 import MapContext from "./MapContext";
 import * as ol from "ol";
 import { 
-	Attribution,
-	ScaleLine,
-	ZoomSlider,
-	Zoom,
-	Rotate,
+	// Attribution,
+	// ScaleLine,
+	// ZoomSlider,
+	// Zoom,
+	// Rotate,
 	MousePosition,
-	OverviewMap,
+	// OverviewMap,
 	defaults as DefaultControls
 } from 'ol/control'
 import * as olEvents from 'ol/events';

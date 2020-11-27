@@ -161,8 +161,8 @@ const geojsonObject2 = {
 };
 
 const App = () => {
-	const [center, setCenter] = useState([-94.9065, 38.9884]);
-	const [zoom, setZoom] = useState(9);
+	// const [center, setCenter] = useState();
+	// const [zoom, setZoom] = useState(9);
 	const [showLayer1, setShowLayer1] = useState(true);
 	const [showLayer2, setShowLayer2] = useState(true);
 
@@ -172,7 +172,7 @@ const App = () => {
 
 	return (
 		<div>
-			<Map center={fromLonLat(center)} zoom={zoom} onClick={(e) => handleMapClick(e)}>
+			<Map center={fromLonLat([-94.9065, 38.9884])} zoom={9} onClick={(e) => handleMapClick(e)}>
 				<Layers>
 					<TileLayer
 						source={osm()}
