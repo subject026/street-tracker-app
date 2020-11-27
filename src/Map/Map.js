@@ -58,13 +58,11 @@ const Map = ({ children, zoom, center }) => {
 		console.log(event)
 	}
 
-	const handleTouchStart = event => {
-		console.log("touchstart: ", event)
-	}
+
 
 	return (
 		<MapContext.Provider value={{ map }}>
-			<div ref={mapRef} className="ol-map" onClick={handleMapClick} onTouchStart={handleTouchStart}>
+			<div ref={mapRef} className="ol-map" onClick={handleMapClick}>
 				{children}
 			</div>
 		</MapContext.Provider>
