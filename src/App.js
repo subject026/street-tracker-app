@@ -166,9 +166,13 @@ const App = () => {
 	const [showLayer1, setShowLayer1] = useState(true);
 	const [showLayer2, setShowLayer2] = useState(true);
 
+	const handleMapClick = event => {
+		console.log({event})
+	}
+
 	return (
 		<div>
-			<Map center={fromLonLat(center)} zoom={zoom}>
+			<Map center={fromLonLat(center)} zoom={zoom} onClick={(e) => handleMapClick(e)}>
 				<Layers>
 					<TileLayer
 						source={osm()}
